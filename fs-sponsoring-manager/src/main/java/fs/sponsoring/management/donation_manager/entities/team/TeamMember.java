@@ -7,9 +7,6 @@ public class TeamMember {
     private UUID id;
     private String firstName;
     private String lastName;
-    private String teamEmail;
-    private String privateEmail;
-    private String phoneNumber;
     private Role teamRole;
 
     public TeamMember(UUID id, String firstName, String lastName, String teamEmail, String privateEmail, String phoneNumber, Role teamRole) {
@@ -24,9 +21,6 @@ public class TeamMember {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.teamEmail = teamEmail;
-        this.privateEmail = privateEmail;
-        this.phoneNumber = phoneNumber;
         this.teamRole = teamRole;
     }
 
@@ -44,30 +38,6 @@ public class TeamMember {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-
-    public String getPrivateEmail() {
-        return privateEmail;
-    }
-
-    public void setPrivateEmail(String privateEmail) {
-        this.privateEmail = privateEmail;
-    }
-
-    public String getTeamEmail() {
-        return teamEmail;
-    }
-
-    public void setTeamEmail(String teamEmail) {
-        this.teamEmail = teamEmail;
     }
 
     public Role getTeamRole() {

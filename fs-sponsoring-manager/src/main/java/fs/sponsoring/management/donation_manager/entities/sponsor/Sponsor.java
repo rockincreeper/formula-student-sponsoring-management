@@ -6,13 +6,14 @@ import java.util.Objects;
 import java.util.UUID;
 
 public class Sponsor {
-    private UUID id;
+    private final UUID id;
     private String name;
     private String description;
     private Address address;
     private ContactPerson contactPerson;
+    private double totalSponsoredBudget;
 
-    public Sponsor(UUID id, String name, String description, Address address, ContactPerson contactPerson) {
+    public Sponsor(UUID id, String name, String description, Address address, ContactPerson contactPerson, double totalSponsoredBudget) {
         Objects.requireNonNull(id);
         if (name.isEmpty() || address == null || contactPerson == null) {
             throw new IllegalArgumentException("Details for Sponsor must not be null or empty");
