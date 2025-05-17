@@ -1,10 +1,10 @@
-package fs.sponsoring.management.donation_manager.value_objects.sponsor;
+package fs.sponsoring.management.budget_manager.domain.aggregates.sponsor.sponsoring_package;
 
-public final class SponsorPackage {
+public final class SponsoringPackage {
     private final double sponsoredBudgetAmount;
     private final SponsoringBadge earnedSponsoringBadge;
 
-    public SponsorPackage(double sponsoredBudgetAmount) {
+    public SponsoringPackage(double sponsoredBudgetAmount) {
         if (sponsoredBudgetAmount < 0) {
             throw new IllegalArgumentException("Sponsored budget amount cannot be negative");
         }
@@ -20,8 +20,8 @@ public final class SponsorPackage {
         return earnedSponsoringBadge;
     }
 
-    public SponsorPackage addBudgetAmount(double budgetAmount) {
-        return new SponsorPackage(this.sponsoredBudgetAmount + budgetAmount);
+    public SponsoringPackage addBudgetAmount(double budgetAmount) {
+        return new SponsoringPackage(this.sponsoredBudgetAmount + budgetAmount);
     }
 
     public double getSponsoredBudgetAmount() {
