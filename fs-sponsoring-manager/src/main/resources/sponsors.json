@@ -1,0 +1,29 @@
+[
+  {
+    "id": "001",
+    "teamId": "f-119",
+    "name": "Borsch",
+    "address": {
+      "country": "GERMANY",
+      "state": "BW",
+      "zipCode": "12345",
+      "city": "Musterstadt",
+      "street": "Musterstraße",
+      "houseNumber": 1
+    },
+    "contactPerson": {
+      "id": "1",
+      "firstName": "John",
+      "lastName": "Wick",
+      "phoneNumber": {
+        "areaCode": "GERMANY",
+        "number": "0123"
+      }
+    },
+    "sponsoringPackage": {
+      "sponsoredBudgetAmount": 1001.0,
+      "earnedSponsoringBadge": "SPONSOR"
+    }
+  }
+
+]

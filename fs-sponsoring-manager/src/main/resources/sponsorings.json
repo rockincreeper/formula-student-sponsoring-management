@@ -1,0 +1,15 @@
+[ {
+  "id" : "001",
+  "teamId" : "f-119",
+  "sponsorId" : "001",
+  "creationDate" : [ 2025, 5, 18 ],
+  "sponsoringType" : "BUDGET_SPONSORING",
+  "budgetForSponsoring" : 1001.0
+}, {
+  "id" : "7be80447-ba0c-4b66-90fe-05c8fde0ef49",
+  "teamId" : "9979d50f-d5c2-439f-878d-2b0ffeb991ba",
+  "sponsorId" : "7be80447-ba0c-4b66-90fe-05c8fde0ef49",
+  "creationDate" : [ 2025, 5, 18 ],
+  "sponsoringType" : "BUDGET_SPONSORING",
+  "budgetForSponsoring" : 500.0
+} ]

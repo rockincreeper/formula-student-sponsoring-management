@@ -1,0 +1,19 @@
+{
+  "id": "f-119",
+  "teamName": "High Speed Karlsruhe",
+  "teamMembers": [
+    {
+      "id": "hsk-01",
+      "firstName": "David",
+      "lastName": "Bohr",
+      "teamRole": "TEAM_CAPTAIN"
+    },
+    {
+      "id": "hsk-02",
+      "firstName": "Joe",
+      "lastName": "Doe",
+      "teamRole": "TEAM_MEMBER"
+    }
+  ],
+  "totalFinancialBudget": 1001.0
+}

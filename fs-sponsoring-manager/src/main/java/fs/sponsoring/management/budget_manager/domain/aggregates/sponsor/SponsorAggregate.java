@@ -6,15 +6,15 @@ import fs.sponsoring.management.budget_manager.domain.aggregates.sponsor.address
 import java.util.UUID;
 
 public class SponsorAggregate {
-    private final UUID id;
-    private final UUID teamId;
+    private final String id;
+    private final String teamId;
     private final String name;
     private Address address;
     private ContactPerson contactPerson;
     private SponsoringPackage sponsoringPackage;
 
-    public SponsorAggregate(UUID teamId, String name, Address address, ContactPerson contactPerson) {
-        this.id = UUID.randomUUID();
+    public SponsorAggregate(String sponsorId, String teamId, String name, Address address, ContactPerson contactPerson, SponsoringPackage sponsoringPackage) {
+        this.id = sponsorId;
         this.teamId = teamId;
         this.name = name;
         this.address = address;
@@ -37,7 +37,7 @@ public class SponsorAggregate {
         this.contactPerson = contactPerson;
     }
 
-    public UUID getId() {
+    public String getId() {
         return id;
     }
 
@@ -53,7 +53,7 @@ public class SponsorAggregate {
         this.sponsoringPackage = sponsoringPackage;
     }
 
-    public UUID getTeamId() {
+    public String getTeamId() {
         return teamId;
     }
 }

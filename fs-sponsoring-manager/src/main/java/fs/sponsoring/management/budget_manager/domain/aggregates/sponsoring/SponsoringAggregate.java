@@ -7,15 +7,15 @@ import java.util.Objects;
 import java.util.UUID;
 
 public final class SponsoringAggregate {
-    private final UUID id;
-    private final UUID teamId;
-    private final UUID sponsorId;
+    private final String id;
+    private final String teamId;
+    private final String sponsorId;
     private final LocalDate creationDate;
     private SponsoringType sponsoringType;
     private double budgetForSponsoring;
 
-    public SponsoringAggregate(UUID teamId, UUID teamMemberId, UUID sponsorId, double budgetForSponsoring) {
-        this.id = UUID.randomUUID();
+    public SponsoringAggregate(String sponsoringId, String teamId, String sponsorId, double budgetForSponsoring) {
+        this.id = sponsoringId;
         this.teamId = Objects.requireNonNull(teamId);
         this.sponsorId = Objects.requireNonNull(sponsorId);
         this.creationDate = LocalDate.now();
@@ -42,11 +42,11 @@ public final class SponsoringAggregate {
         return creationDate;
     }
 
-    public UUID getId() {
+    public String getId() {
         return id;
     }
 
-    public UUID getSponsorId() {
+    public String getSponsorId() {
         return sponsorId;
     }
 
@@ -58,7 +58,7 @@ public final class SponsoringAggregate {
         this.sponsoringType = sponsoringType;
     }
 
-    public UUID getTeamId() {
+    public String getTeamId() {
         return teamId;
     }
 }
