@@ -13,7 +13,13 @@ public final class SponsoringPackage {
     }
 
     private SponsoringBadge selectSponsoringBadge(double sponsoredBudgetAmount) {
-        return sponsoredBudgetAmount > 1000 ? SponsoringBadge.SPONSOR : SponsoringBadge.SUPPORTER;
+        if (sponsoredBudgetAmount > 1000) {
+            return SponsoringBadge.SPONSOR;
+        } else if (sponsoredBudgetAmount < 0) {
+            return SponsoringBadge.SUPPORTER;
+        } else {
+            return SponsoringBadge.NONE;
+        }
     }
 
     public SponsoringBadge getEarnedSponsoringBadge() {

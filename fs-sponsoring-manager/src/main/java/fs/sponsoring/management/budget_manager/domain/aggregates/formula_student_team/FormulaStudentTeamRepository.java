@@ -5,7 +5,11 @@ import java.util.List;
 public interface FormulaStudentTeamRepository {
     String getTeamName();
 
-    List<TeamMember> findAllTeamMember();
+    String getTeamId();
+
+    List<TeamMember> findAllTeamMembers();
+
+    double addBudget(double budget);
 
     double getTotalFinancialBudget();
 

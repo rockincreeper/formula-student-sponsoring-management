@@ -5,11 +5,11 @@ import fs.sponsoring.management.budget_manager.domain.aggregates.sponsor.sponsor
 import java.util.List;
 
 public interface SponsoringRepository {
-    List<SponsoringAggregate> findAllSponsoringsForFormulaStudentTeam(String teamId);
+    List<SponsoringAggregate> findAllSponsoringsOfTeam();
 
     List<SponsoringAggregate> findAllSponsoringsForSponsor(String sponsorId);
 
     SponsoringPackage findForSponsorById(String sponsorId);
 
-    SponsoringAggregate save(SponsoringAggregate sponsoringAggregate);
+    void save(SponsoringAggregate sponsoringAggregate);
 }
